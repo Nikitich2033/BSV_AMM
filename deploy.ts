@@ -1,10 +1,13 @@
-import { Amm } from './src/contracts/amm'
+import { AMM } from './src/contracts/amm_w_lib'
+import { ERC20Lib } from './src/contracts/erc20lib'
 import {
     bsv,
     TestWallet,
     DefaultProvider,
-    sha256,
+    PubKey,
+    HashedMap,
     toByteString,
+    Addr,
 } from 'scrypt-ts'
 
 import * as dotenv from 'dotenv'
@@ -19,12 +22,9 @@ if (!process.env.PRIVATE_KEY) {
 }
 
 // Read the private key from the .env file.
-// The default private key inside the .env file is meant to be used for the Bitcoin testnet.
-// See https://scrypt.io/docs/bitcoin-basics/bsv/#private-keys
 const privateKey = bsv.PrivateKey.fromWIF(process.env.PRIVATE_KEY || '')
 
 // Prepare signer.
-// See https://scrypt.io/docs/how-to-deploy-and-call-a-contract/#prepare-a-signer-and-provider
 const signer = new TestWallet(
     privateKey,
     new DefaultProvider({
@@ -33,14 +33,35 @@ const signer = new TestWallet(
 )
 
 async function main() {
-    await Amm.loadArtifact()
+    await AMM.loadArtifact()
 
-    // TODO: Adjust the amount of satoshis locked in the smart contract:
-    const amount = 1
+    // Adjust the amount of satoshis locked in the smart contract:
+    const amount = 1000 // Example amount, adjust as needed.
 
-    const instance = new Amm(
-        // TODO: Adjust constructor parameter values:
-        sha256(toByteString('hello world', true))
+    // Prepare parameters for the AMM constructor
+    const poolPubkey = PubKey(toByteString('03'.repeat(32))) // Example pubkey
+    const token = new ERC20Lib(
+        toByteString('04'.repeat(32)), // Name
+        toByteString('04'.repeat(32)), // Symbol
+        poolPubkey, // Issuer's pubkey
+        new HashedMap(), // Balances
+        new HashedMap() // Allowances
+    )
+    const lpToken = new ERC20Lib(
+        toByteString('05'.repeat(32)), // Name
+        toByteString('05'.repeat(32)), // Symbol
+        poolPubkey, // Issuer's pubkey
+        new HashedMap(), // Balances
+        new HashedMap() // Allowances
+    )
+    const lpTokenBalances = new HashedMap<Addr, bigint>()
+
+    const instance = new AMM(
+        poolPubkey,
+        token,
+        lpToken,
+        lpTokenBalances,
+        0n // Initial LP token supply
     )
 
     // Connect to a signer.
@@ -48,7 +69,7 @@ async function main() {
 
     // Contract deployment.
     const deployTx = await instance.deploy(amount)
-    console.log(`Amm contract deployed: ${deployTx.id}`)
+    console.log(`AMM contract deployed: ${deployTx.id}`)
 }
 
-main()
+main().catch(console.error)

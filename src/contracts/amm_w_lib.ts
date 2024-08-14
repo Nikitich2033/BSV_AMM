@@ -143,8 +143,9 @@ export class AMM extends SmartContract {
 
         const oldBitcoinBalance: bigint = this.ctx.utxo.value
 
+        //constant product formula implementation
         const bitcoinsAmount: bigint =
-            (oldBitcoinBalance * tokenAmount) / oldTokenBalance
+            (oldBitcoinBalance * tokenAmount) / (oldTokenBalance + tokenAmount)
 
         assert(bitcoinsAmount > 0n, 'Invalid bitcoin amount calculated.')
 
@@ -171,7 +172,7 @@ export class AMM extends SmartContract {
     @method(SigHash.SINGLE)
     public swapBitcoinToToken(
         sender: PubKey,
-        tokenAmount: bigint,
+        bitcoinAmount: bigint,
         senderSig: Sig,
         oldTokenBalance: bigint,
         senderBalance: bigint,
@@ -180,10 +181,12 @@ export class AMM extends SmartContract {
         assert(this.checkSig(senderSig, sender), 'Invalid signature')
 
         const oldBitcoinBalance = this.ctx.utxo.value
-        const bitcoinAmount = newBitcoinBalance - oldBitcoinBalance
+        const bitcoinInputAmount = newBitcoinBalance - oldBitcoinBalance
 
+        //constant product formula implementation
         const tokensAmount: bigint =
-            (bitcoinAmount * oldTokenBalance) / oldBitcoinBalance
+            (bitcoinInputAmount * oldTokenBalance) /
+            (oldBitcoinBalance + bitcoinInputAmount)
 
         const from = {
             address: pubKey2Addr(this.poolPubkey),
@@ -243,7 +246,8 @@ export class AMM extends SmartContract {
         inputReserve: bigint,
         outputReserve: bigint
     ) {
-        const amount: bigint = (outputReserve * input) / inputReserve
+        //constant product formula implementation
+        const amount: bigint = (outputReserve * input) / (inputReserve + input)
         assert(amount > 0n, 'Output amount must be greater than 0')
         assert(amount <= outputReserve, 'Amount exceeds available reserves')
     }

@@ -1,0 +1,10 @@
+HOW TO READ THE FILES
+
+-Use password to access the zip folder
+
+    7z e aml_syn_data.7z
+
+
+Next, enter password emailed to you.
+
+No password for this file

@@ -1,0 +1,43 @@
+TERMS OF USE J.P. MORGAN AI RESEARCH SYNTHETIC DATASET 
+ 
+PLEASE READ THESE TERMS OF USE CAREFULLY. BY ACCESSING THIS SYNTHETIC DATASET ("DATA") YOU 
+AGREE TO BE BOUND BY THE TERMS OF USE BELOW. THESE TERMS OF USE ARE SUBJECT TO CHANGE 
+WITHOUT NOTICE, FROM TIME TO TIME IN OUR SOLE DISCRETION. WE WILL NOTIFY YOU OF AMENDMENTS TO THESE TERMS OF USE BY POSTING THEM. IF YOU DO NOT AGREE WITH THESE TERMS OF USE, PLEASE DO NOT ACCESS THIS DATA. 
+
+AS USED HEREIN, THE TERMS "YOU" AND "YOURS" SHALL MEAN ANYONE WHO ACCESSES THE DATA.  You are strictly prohibited from unauthorized use of our systems or websites, including but not limited to unauthorized entry into our systems, or misuse of any information. 
+
+License.  
+J.P. Morgan grants You, a non-exclusive, non-transferable, revocable, limited license, to use the Data solely for your internal purposes ("Use") and You shall be permitted (i) to create derivative works in connection with Your Use and (ii) to distribute de minimis amounts of Data in publications.  Except for the limited rights expressly granted herein, all rights in and to the Data are expressly reserved by J.P. Morgan and are excluded from this license.   
+Except as permitted herein, You shall not: (i)  modify, copy, translate, recompile, decompile, disassemble or reverse engineer the Data; (ii) enhance data products; (iii) provide access to the Data in a manner that infringes the intellectual property rights of J.P. Morgan or any third party; or (iv) distribute the Data to any third party. 
+
+Termination. 
+J.P. Morgan may terminate Your access to the Data immediately at any time.  Following any such termination You agree to destroy or purge the Data from Your systems and files except for archival or regulatory reasons.   
+
+Confidentiality and Ownership. 
+You shall treat the Data as confidential with measures similar to those used on Your confidential information.  You acknowledge that title and full ownership in and to the Data is reserved to and will remain with J.P. Morgan and all proprietary and intellectual property rights of any nature, are owned by and will remain the property of J.P. Morgan.   
+
+Disclaimers; Limitations of Liability; Indemnification. 
+EXCEPT FOR THE REPRESENTATIONS SET FORTH HEREIN, YOU ACKNOWLEDGE THAT: (A) THE DATA IS PROVIDED "AS IS" WITH ALL FAULTS, (B) ALL WARRANTIES AND REPRESENTATIONS OF ANY KIND WITH REGARD TO THE DATA 
+ARE DISCLAIMED INCLUDING ANY IMPLIED WARRANTIES OF MERCHANTABILITY, QUALITY, ACCURACY, FITNESS FOR A PARTICULAR PURPOSE AND/OR AGAINST NONINFRINGEMENT AND/OR WARRANTIES AS TO ANY RESULTS TO BE OBTAINED BY AND/OR FROM THE USE OF THE DATA, (C) J.P. MORGAN DOES NOT GUARANTEE THE AVAILABILITY, SEQUENCE, TIMELINESS, ACCURACY OR COMPLETENESS OF THE DATA, AND (D) J.P. MORGAN MAY DISCONTINUE GENERATING THE DATA AT ANY TIME WITHOUT PRIOR NOTICE.  TO THE EXTENT THAT LIABILITY FROM IMPLIED WARRANTIES OR CONDITIONS CANNOT BE EXCLUDED UNDER APPLICABLE LAW, SUCH IMPLIED WARRANTIES OR CONDITIONS ARE LIMITED IN DURATION TO THIRTY (30) DAYS FROM INITIAL DELIVERY. 
+
+TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, J.P. MORGAN WILL NOT BE LIABLE (IN CONTRACT, TORT 
+OR OTHERWISE) FOR ANY ORDINARY, DIRECT, INDIRECT, CONSEQUENTIAL, SPECIAL, PUNITIVE OR EXEMPLARY DAMAGES IN CONNECTION WITH ACCESS OR USE OF THE DATA EVEN IF J.P. MORGAN HAS BEEN APPRIZED OF THE LIKELIHOOD OF SUCH DAMAGES OCCURRING.   
+
+Notices. 
+You shall include the following notice in connection with every external use of Data, including publications:  "This publication includes or references synthetic data provided by J.P. Morgan." 
+
+Non-Use of J.P. Morgan Name. 
+Except as required for any notice, You shall not use the name, trademark or proprietary indicia of J.P. Morgan. in any advertising, announcement, press release or promotional materials without J.P, Morgan's consent.  
+
+Waivers; Severability. 
+No waiver by either party of a breach of any provision of these Terms of Use by the other party will operate as a waiver of any subsequent breach.  Any provision that is prohibited or unenforceable in any jurisdiction will, as to such jurisdiction only, be ineffective to the extent of such prohibition or unenforceability without invalidating the remaining 
+provisions.  J.P. Morgan's failure at any time to require performance of any provision of these Terms of Use will in no way affect its right thereafter to require performance of such provision, nor will such failure be held to be a waiver of any succeeding breach of such provision or a waiver of such provision itself. 
+
+Governing Law 
+These Terms of Use will be governed by the laws of the State of New York, without regard to its conflicts of law principles or to the United Nations Convention on Contracts for the International Sale of Goods.  Any action or proceeding will be under the exclusive jurisdiction of the state and federal courts situated in New York County, New York, USA., and You submit to the exclusive jurisdiction of the federal and state courts located in New York County, New York, USA and IRREVOCABLY WAIVES ITS RIGHT TO JURY TRIAL WITH RESPECT THERETO.   
+
+Equitable Relief. 
+You acknowledges that the Data is special, unique and extraordinary.  You acknowledge that J.P. Morgan may be irreparably harmed as a result of any misuse of the Data and that damages might be an inadequate remedy therefor and J.P. Morgan shall be entitled to seek equitable relief.  You acknowledge that all of J.P. Morgan's rights and remedies herein shall be cumulative and nothing herein shall be construed to preclude J.P. Morgan from pursuing any other action, right or remedy for any breach, or threatened breach, of any term or condition herein. 
+ 
+ 
+ 

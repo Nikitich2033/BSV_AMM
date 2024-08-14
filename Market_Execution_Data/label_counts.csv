@@ -1,0 +1,6 @@
+Label,count
+NoiseAgent,2000
+ValueAgent,204
+MomentumAgent,24
+AdaptivePOVMarketMakerAgent,4
+ExecutionAgent,2
